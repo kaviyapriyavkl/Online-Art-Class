@@ -1,0 +1,40 @@
+#nav{
+    background:url(https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdoaXRlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60);
+}
+
+.nav-item{
+    margin: 0 30px;
+    
+}
+.nav-link{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand{
+    font-family: 'Barriecito', cursive;
+}
+.brand
+{
+    margin-right: 50%;
+}
+   
+.container-fluid{
+    padding: 2%;
+    border-bottom: 2px solid #66897f;
+}
+
+.button
+{
+    text-decoration: none;
+}
+
+#footer{
+    text-align: center;
+   padding: 7% 15%;
+   background-color: #D4E2D4;
+   border-top: 2px solid #66897f;
+}
+
+.link-icon{
+    margin: 0 10px;
+}
+

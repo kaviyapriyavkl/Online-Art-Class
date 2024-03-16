@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Montserrat&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+    <script>
+        
+        function validateForm(){
+            if(document.myForm.fname.value==""){
+                alert('Enter the First Name');
+                document.getElementById("fname").focus();
+                return false; 
+               }
+               else if(document.myForm.lname.value==""){
+                alert('Enter the Last Name');
+                document.getElementById("lname").focus();
+                return false;
+               }
+               else if(document.myForm.age.value==""){
+                alert('age id is required');
+                document.getElementById("age").focus();
+                return false;
+               }
+               else if(document.myForm.num.value==""){
+                alert('number id is required');
+                document.getElementById("num").focus();
+                return false;
+               }
+               else if(document.myForm.email.value==""){
+                alert('Mail id is required');
+                document.getElementById("email").focus();
+                return false;
+               }
+               else if(document.myForm.cntry.value==""){
+                alert('country id is required');
+                document.getElementById("cntry").focus();
+                return false;}
+                 }
+
+
+    </script>
+
+
+</head>
+<body>
+    <div class="title bg-light ">
+        <h1>
+            <b>Register here </b>
+        </h1>
+    </div>
+    <div class="form">
+    <form name="myForm" action="/exp-1/submit.html" method="get" onsubmit="return validateForm()">
+        <input type="text" class="boxdesign top firsttop"placeholder="First Name" name="fname" id="fname">
+        <input type="text" class="boxdesign top"placeholder="Last Name" name="lname" id="lname"><br>
+        <input type="number" class="boxdesign"placeholder="Age" name="age" id="age">
+        <input type="text" class="boxdesign"placeholder="Phone Number" name="num" id="num">
+        <input type="email" class="boxdesign"placeholder="Email" name="email" id="email">
+        <input type="text" class="boxdesign cntry"placeholder="Country" name="cntry" id="cntry">
+        <div class="gndr"><span><p>Tick the gender</p></span>
+        <input type="radio" id="fml" name="gender" value="Female">
+        <label for="fml">Female</label><br>
+        <input type="radio" id="ml" name="gender" value="male">
+        <label for="ml">male</label><br></div>
+      
+        <button type="submit" class="submit">Submit</button><br>
+        
+</form>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='script/script.js') }}"></script>
+</body>
+</html>
+
+
